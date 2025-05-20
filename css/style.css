@@ -1,20 +1,35 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background: url("/img/background_login.jpg") no-repeat center center fixed;
+    background-size: cover;
+    background-color: #f8f9fa; /* Color de respaldo si la imagen no carga */
 }
 
+/* Tarjetas con diseño refinado */
 .card {
-    width: 350px;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
 }
 
-.list-group-item {
-    display: flex;
-    justify-content: space-between;
+.card:hover {
+    transform: translateY(-5px);
 }
 
+/* Titulares resaltados */
+.titulo-resaltado {
+    background-color: rgba(0, 123, 255, 0.1);
+    padding: 12px 20px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+/* Botón con efecto más elegante */
 .btn-success {
     transition: 0.3s;
 }
 
 .btn-success:hover {
-    opacity: 0.8;
+    opacity: 0.85;
 }

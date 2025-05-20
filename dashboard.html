@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ecommerce - Dashboard</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+   <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="bootstrap-icons/app-indicator.svg" type="image/x-icon">
+</head>
+<body class="bg-light">
+
+<div class="container-fluid mt-5">
+    <h1 class="text-center titulo-resaltado">Tienda Online</h1>
+
+    <div class="row mt-4">
+        <!-- Sección de productos -->
+        <div class="col-lg-8">
+            <h3 class="titulo-resaltado mb-3">Productos Disponibles</h3>
+            <div id="productos" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <div class="card p-3 text-center">
+                        <h5 class="card-title">Producto 1</h5>
+                        <p class="card-text">$29.99</p>
+                        <button class="btn btn-primary w-100" onclick="agregarAlCarrito(1)">Agregar</button>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card p-3 text-center">
+                        <h5 class="card-title">Producto 2</h5>
+                        <p class="card-text">$49.99</p>
+                        <button class="btn btn-primary w-100" onclick="agregarAlCarrito(2)">Agregar</button>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card p-3 text-center">
+                        <h5 class="card-title">Producto 3</h5>
+                        <p class="card-text">$19.99</p>
+                        <button class="btn btn-primary w-100" onclick="agregarAlCarrito(3)">Agregar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de carrito -->
+        <div class="col-lg-4">
+            <div class="card shadow-sm p-3">
+                <h3 class="titulo-resaltado text-center">Carrito de Compras</h3>
+                <ul id="carrito" class="list-group mt-3"></ul>
+                <button class="btn btn-success w-100 mt-3" onclick="irAPago()">Pagar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <script src="script.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
